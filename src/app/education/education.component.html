@@ -1,0 +1,19 @@
+<main class="education">
+  <div class="image">
+    <img src="../../assets/img.png" alt="profile_image">
+</div>
+<div class="education-content">
+  <h1 class="common-heading">My Education</h1>
+
+    <section class="col" *ngFor="let education of educationList">
+        <h2>{{education.course}}</h2>
+        <h3>{{education.institute}}</h3>
+        <h4>{{education.duration}}</h4>
+        <h4 class="box">Grade:{{education.grade}}</h4>
+    </section>
+
+</div>
+</main>
+
+
+
