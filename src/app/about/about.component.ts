@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
 export class AboutComponent {
 
 downloadCV(){
-      const cvFileURL = '../../assets/Rina Resume.pdf';
+      const cvFileURL = '../../assets/Rina kevalani CV.pdf';
       const link = document.createElement('a');
       link.href = cvFileURL;
       link.download = 'Resume.pdf'; // Change the filename for the downloaded file

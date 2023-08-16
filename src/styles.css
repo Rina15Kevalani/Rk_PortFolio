@@ -284,6 +284,19 @@ li {
   border-width: 5px;
   border-radius:50% ;
   border-color:#b117179d;
+  animation: water-wave 3s linear infinite;
+}
+
+@keyframes water-wave {
+  0% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
+  50% {
+    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+  }
+  100% {
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+  }
 }
 
 /*biodata*/
@@ -304,7 +317,7 @@ li {
 }
 
 .about-data-stats {
-  display: flex;
+  display:flex;
   padding: 6.4rem 0;
   flex-direction: column;
   gap: 3rem;
@@ -411,8 +424,8 @@ li {
   max-width: 600px;
   color: #fff;
   justify-content: space-between;
+  margin-top: 2%;
 }
-
 .image{
   width: 300px;
   height: 300px;
@@ -492,7 +505,7 @@ section h4{
 
 .project-images img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-radius: 7px;
   position:relative;
   overflow: hidden;
@@ -557,7 +570,6 @@ section h4{
 .certificat-box {
   text-align: center;
   box-shadow: var(--shadow);
-  border-radius: 5px;
   padding: 6.4rem 3.4rem;
   transition: all 0.2s linear;
 }
@@ -572,12 +584,9 @@ section h4{
   height: 100%;
   background-color: var(--icons-bg);
   display: inline-block;
-  border-radius:  30% 54% 46% 70%;
   padding: 1.4rem 1.8rem;
   position: relative;
   color: var(--heading);
-  animation: water-wave 3s linear infinite;
-
 }
 
 .certificat-icon::after {
@@ -591,25 +600,14 @@ section h4{
   border-radius:30% ;
   background: transparent;
   border: 1px solid var(--black);
-  animation: water-wave 3s linear infinite;
-}
-
-@keyframes water-wave {
-  0% {
-    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-  }
-  50% {
-    border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
-  }
-  100% {
-    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-  }
 }
 
 .certificat-box h3 {
   text-transform: capitalize;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: small;
+
 }
 
 /*=================contact========================*/
