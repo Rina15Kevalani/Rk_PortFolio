@@ -737,7 +737,7 @@ h2{
   color: var(--white);
 }
 
-@media (max-width: 95em) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 130rem;
     padding: 0 3.2rem;
@@ -747,5 +747,252 @@ h2{
     gap: 3.4rem;
   }
 
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-lists {
+    margin-top: 1rem;
+  }
+
+  .navbar-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s linear;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .navbar-link:hover,
+  .navbar-link:active {
+    color: darkturquoise;
+  }
+}
+
+/* Media Query for Small Screens (up to 768px) */
+@media (max-width: 768px) {
+  .section-hero {
+    padding: 6rem 0; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .user-heading {
+    font-size: 4rem; /* Adjust font size for the heading */
+  }
+
+  .user-para {
+    max-width: 100%; /* Make the paragraph full width */
+    padding: 0 1rem; /* Add padding to the paragraph */
+  }
+
+  .section-user-image {
+    max-width: 100%; /* Make the image container full width */
+  }
+
+  .section-user-image img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    order: 2;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    border-radius: 50%;
 
 }
+
+  .about-data {
+    text-align:left;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-para {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .education {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  .col {
+    margin-left: 0;
+  }
+
+  .col::before,
+  .col::after {
+    display: none;
+  }
+
+  .col h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .col .image {
+    margin-bottom: 1.5rem;
+  }
+
+  .col img {
+    max-width: 100%;
+  }
+
+  .col .about-content {
+    text-align: center;
+  }
+
+  .col h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .col p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-certificat .grid {
+    display: block;
+    margin-top: 4rem;
+  }
+
+  .certificat-box {
+    margin-bottom: 3rem;
+  }
+
+  .certificat-img {
+    background-color: var(--icons-bg);
+    padding: 1.2rem 1.6rem;
+  }
+
+  .certificat-icon::after {
+    border-width: 0.6rem;
+  }
+
+  .certificat-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .certificat-box p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-footer {
+    padding: 4rem 0;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .f-links ul,
+  .f-services ul,
+  .f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .f-social-icons {
+    margin: 2rem 0;
+  }
+
+  .f-social-icons .icons {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+
+  .f-credits p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-contact-main {
+    margin-top: 4rem;
+  }
+
+  .section-contact-main .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-contact-main form {
+    gap: 2rem;
+  }
+
+  .section-contact-main input,
+  .section-contact-main textarea {
+    padding: 1rem 1.5rem;
+  }
+
+  .section-contact-main input[type="submit"] {
+    max-width: 100%;
+  }
+
+  .site-contact-details {
+    text-align: center;
+  }
+}
+
+
