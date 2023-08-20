@@ -651,8 +651,10 @@ h2{
 }
 
 .site-contact-details {
-  color: #000;
+  color: #8b0808;
   font-style: bold;
+  font-size: large;
+  font-family: cursive;
 }
 /*======================footer================*/
 .section-footer {
@@ -745,5 +747,5 @@ h2{
     gap: 3.4rem;
   }
 
-  
+
 }
