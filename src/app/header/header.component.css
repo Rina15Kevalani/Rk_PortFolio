@@ -1,1 +1,34 @@
+/* Styles for medium screens (tablets) */
+@media (max-width: 768px) {
+  .navbar-lists {
+    flex-direction:row;
+    font-size: 5px;
+  }
 
+  .navbar-link {
+    margin: 10px 0;
+    color: rgb(237, 9, 116);
+  }
+
+  /* Show small back things here */
+  .small-back-things {
+    display: block;
+  }
+}
+
+/* Styles for small screens (mobile devices) */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .navbar-link {
+    margin: 10px 0;
+  }
+
+  /* Hide small back things here on smaller screens */
+  .small-back-things {
+    display: none;
+  }
+}

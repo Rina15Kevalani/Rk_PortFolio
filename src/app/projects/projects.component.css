@@ -1,6 +1,6 @@
 .container {
-  background-color: transparent;
-  padding: 20px;
+  background-color: #8fbff37e;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(214, 159, 159, 0.683);
 }
@@ -24,12 +24,12 @@ img {
 .card-title {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #611a2bfa; /* Text color */
+  color: #611a2bfa;
 }
 
 .card-text {
   font-size: 16px;
-  color: #333; /* Text color */
+  color: #333;
 }
 
 /* Styles for the overlay and project link */
@@ -81,4 +81,33 @@ img {
 /* Hover effect for the link */
 .hand-emoji a:hover {
   text-decoration: underline;
+}
+
+
+
+/* Default styles for large screens */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .project-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+  .card-body {
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  
 }
