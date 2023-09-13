@@ -1,0 +1,84 @@
+.container {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(214, 159, 159, 0.683);
+}
+
+
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #611a2bfa; /* Text color */
+}
+
+.card-text {
+  font-size: 16px;
+  color: #333; /* Text color */
+}
+
+/* Styles for the overlay and project link */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.heading {
+  color: #251919;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Hover effect for the overlay */
+.img-overlay:hover .overlay {
+  opacity: 1;
+}
+
+/* Hand emoji styles */
+.hand-emoji {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Style for the entire link, including the emoji */
+.hand-emoji a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Hover effect for the link */
+.hand-emoji a:hover {
+  text-decoration: underline;
+}

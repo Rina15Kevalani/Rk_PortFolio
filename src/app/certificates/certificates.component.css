@@ -1,0 +1,58 @@
+/*=================certificates========================*/
+.section-certificat {
+  transition: all 0.7s linear;
+}
+
+.section-certificat p {
+  max-width: 60rem;
+}
+
+.section-certificat .grid {
+  margin-top: 10rem;
+  row-gap: 10rem;
+}
+ h1{
+  color: #3ad4d7;
+}
+.certificat-box {
+  text-align: center;
+  box-shadow: var(--shadow);
+  padding: 6.4rem 3.4rem;
+  transition: all 0.2s linear;
+}
+
+.certificat-box:hover,
+.certificat-box:active {
+  transform: translateY(-3rem);
+}
+
+.certificat-img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--icons-bg);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--heading);
+}
+
+.certificat-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius:30% ;
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+.certificat-box h3 {
+  text-transform: capitalize;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: small;
+
+}

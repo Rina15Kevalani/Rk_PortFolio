@@ -7,6 +7,7 @@ import { Education } from 'src/education';
 })
 export class EducationComponent {
   educationList: Education[] = [
+    
     {
       institute:'Charusat University, changa',
       course: 'MCA',

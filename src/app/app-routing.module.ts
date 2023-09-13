@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { EducationComponent } from './education/education.component';
 import { CertificatesComponent } from './certificates/certificates.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -18,6 +19,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'footer',component:FooterComponent},
   {path:'certificates',component:CertificatesComponent},
+  //{path:'/',component:AppComponent},
+
 
 ];
 

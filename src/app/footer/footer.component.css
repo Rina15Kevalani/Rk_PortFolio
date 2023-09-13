@@ -1,0 +1,107 @@
+/* Styles for the footer */
+.section-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container.grid-four-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.f-about,
+.f-links,
+.f-services,
+.f-address {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.f-about h3,
+.f-links h3,
+.f-services h3,
+.f-address h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: crimson;
+}
+
+.f-links ul li,
+.f-services ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size:15px;
+}
+
+.f-links ul li a{
+    color: #fff;
+}
+.f-links ul li a:hover{
+  color: #688cd1;
+}
+.f-services ul li a{
+  color: #fff;
+}
+.f-services ul li a:hover{
+  color: #36b0c2;
+}
+
+.f-social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.f-social-icons a {
+  color: #fff;
+  font-size: 30px;
+  margin: 0 10px;
+
+}
+.f-social-icons a:hover {
+  color: #117ce7;
+  font-size: 30px;
+  margin: 0 10px;
+
+}
+
+.f-credits {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.f-credits a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.f-address a{
+  color: #fff;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container.grid-four-column {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .f-about,
+  .f-links,
+  .f-services,
+  .f-address {
+    flex: none;
+    width: 100%;
+  }
+
+  .f-about,
+  .f-links,
+  .f-services,
+  .f-address {
+    padding: 10px;
+  }
+}
