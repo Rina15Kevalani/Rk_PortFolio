@@ -19,7 +19,7 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'footer',component:FooterComponent},
   {path:'certificates',component:CertificatesComponent},
-  //{path:'/',component:AppComponent},
+  {path:'',component:HomeComponent}
 
 
 ];
