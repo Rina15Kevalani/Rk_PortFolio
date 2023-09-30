@@ -1,26 +1,37 @@
-<header class="header">
-  <a href="" class="logo"><h1>PortFolio</h1></a>
-  <nav class="navbar">
-    <ul class="navbar-lists">
-      <li><a routerLink="/home" class="navbar-link home-link" routerLinkActive="active home">Home</a></li>
-      <li>
-        <a routerLink="/about" class="navbar-link about-link">About</a>
-      </li>
-      <li>
-        <a routerLink="/education" class="navbar-link about-link">Education</a>
-      </li>
-      <li>
-        <a routerLink="/certificates" class="navbar-link certificate-link" >Certification</a>
-      </li>
-      <li>
-        <a routerLink="/project" class="navbar-link project-link" aria-disabled="true">Projects</a
-        >
-      </li>
-      <li>
-        <a routerLink="/contact" class="navbar-link contact-link">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-</header>
+<nav class="navbar navbar-expand-lg navbar-light  ">
+      <div class="container-fluid">
+         <img src="../../assets/logo.png" class="rn">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav me-2">
+            <li class="nav-item me-5">
+              <a routerLink="/home" class="nav-link" routerLinkActive="active home">Home</a>
+            </li>
+            <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/education">Education</a>
+            </li>
+            <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/skill">Skills</a>
+            </li>
+            <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/certificates">Certificates</a>
+            </li>
+            <li class="nav-item active me-5">
+              <a routerLink="/project" class="nav-link" aria-disabled="true">Projects</a>
+            </li>
+            <!-- <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/exprience">Experience</a>
+            </li> -->
+            <li class="nav-item active me-5">
+              <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 

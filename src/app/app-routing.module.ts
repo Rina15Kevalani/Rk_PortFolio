@@ -9,12 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { EducationComponent } from './education/education.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { AppComponent } from './app.component';
+import { SkillComponent } from './skill/skill.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'Header',component:HeaderComponent },
   {path:'about',component:AboutComponent},
   {path:'project',component:ProjectsComponent},
+  {path:'skill',component:SkillComponent},
   {path:'education',component:EducationComponent},
   {path:'contact',component:ContactComponent},
   {path:'footer',component:FooterComponent},

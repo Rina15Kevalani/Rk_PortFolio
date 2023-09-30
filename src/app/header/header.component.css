@@ -1,34 +1,55 @@
-/* Styles for medium screens (tablets) */
-@media (max-width: 768px) {
-  .navbar-lists {
-    flex-direction:row;
-    font-size: 5px;
-  }
-
-  .navbar-link {
-    margin: 10px 0;
-    color: rgb(237, 9, 116);
-  }
-
-  /* Show small back things here */
-  .small-back-things {
-    display: block;
-  }
+.navbar-nav {
+  margin-left: auto;
+  justify-content: space-around;
+}
+.rn {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  transform: translate(50%,50%);
+}
+.navbar-brand {
+  font-family:cursive;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(129, 20, 5);
+}
+.navbar{
+    background-color: rgba(186, 220, 232, 0.427);
+}
+#navbarNav{
+font-size: larger;
+font-weight: bold;
+font-size: 20px;
 }
 
-/* Styles for small screens (mobile devices) */
-@media (max-width: 576px) {
-  .header {
-    flex-direction: row;
+.nav-item :hover{
+  text-decoration: underline;
+  color: rgb(243, 107, 186);
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    justify-content: center;
+  }
+
+  .navbar-collapse {
+    background-color: rgba(221, 230, 233, 0);
+  }
+
+  .navbar-toggler {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item {
     text-align: center;
   }
 
-  .navbar-link {
-    margin: 10px 0;
-  }
-
-  /* Hide small back things here on smaller screens */
-  .small-back-things {
-    display: none;
+  .navbar-link .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
   }
 }
+
+
+

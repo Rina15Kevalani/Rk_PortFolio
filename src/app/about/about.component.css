@@ -1,116 +1,104 @@
-/*biodata*/
-.about-image {
-  display:block;
-  justify-content: space-around;
-  align-items: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.common-heading .info{
-  font-size: 1.2rem;
+
+/* Section styles */
+.section-about {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 .about-image img {
-  width: 80%;
-  border: 5px solid #1a8043;
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-  bottom: 50px;
-
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(3deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  filter: sepia(50%);
+}
+.about-image img:hover {
+  transform: scale(1.05);
+  border-color: #1e0913c0;
 }
 
-.about-data-stats {
-  display:flex;
-  padding: 6.4rem 0;
-  flex-direction: column;
-  gap: 3rem;
+.common-heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e74292;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.about-stats h3 {
-  margin-bottom: 1rem;
-  justify-content: start;
+
+.about-data {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
 }
 
-.about-progress-bar {
-  width: 100%;
-  height: 0.8rem;
-  background-color: var(--para-tint);
-  border-radius: 10rem;
-  box-shadow: var(--shadow);
-  position: relative;
+.about-data p {
+  color: black;
+  transition: color 0.3s ease-in-out;
 }
 
-.about-progress-bar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: inherit;
-  background: var(--gradientSupport);
-  border-radius: 10rem;
+.about-data p:hover {
+  color: #009432;
+}
+.portfolio-info {
+  background: linear-gradient(45deg, #cea67468, #71c7ca);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  color: #333; /* Text color */
 }
 
-.about-progress-2::before {
-  width: 99%;
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.about-progress-3::before {
-  width: 90%;
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.about-data p:hover {
+  color: #71cff7;
+  transform: scale(1.05);
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #e74292;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.about-progress-4::before {
-  width: 85%;
-}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
-.about-progress-5::before {
-  width: 70%;
-}
-.about-progress-6::before {
-  width: 64%;
-}
-.about-progress-bar span {
-  position: absolute;
-  top: 1.8rem;
-  width: 4rem;
-  height: 2rem;
-  background: var(--helper);
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: 0;
-}
+  .about-image {
+    text-align: center;
+  }
 
-.about-progress-bar span {
-  left: 76%;
-}
-
-.about-progress-2 span {
-  left: 95%;
-}
-
-.about-progress-3 span {
-  left: 86%;
-}
-
-.about-progress-4 span {
-  left: 81%;
-}
-
-.about-progress-5 span {
-  left: 66%;
-}
-.about-progress-6 span {
-  left: 60%;
-}
-/* to create a caret  */
-.about-progress-bar span::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 0.8rem solid var(--helper);
-  border-color: transparent;
-  border-bottom-color: var(--helper);
-  top: -1.6rem;
+  .about-data {
+    text-align: center;
+  }
 }

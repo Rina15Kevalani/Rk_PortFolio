@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  
+  downloadCV(){
+    const cvFileURL = '../../assets/Rina kevalani CV.pdf';
+    const link = document.createElement('a');
+    link.href = cvFileURL;
+    link.download = 'Resume.pdf'; 
+    link.click();
+  }
+
 }

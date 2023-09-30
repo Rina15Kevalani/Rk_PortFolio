@@ -1,71 +1,40 @@
-
-<section class="section section-contact">
+<section class="contact_us">
   <div class="container">
-    <h1 class="common-heading">Contact Us</h1>
-  </div>
-
-  <div class="section-contact-main contact-container">
-    <form action="" method="POST">
-      <div class="grid grid-two-column">
-        <div>
-          <label for="username"></label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Username"
-            id="username"
-            required
-            autocomplete="off"
-          />
-        </div>
-        <div>
-          <label for="email"></label>
-          <input
-            type="email"
-            name="email"
-            placeholder="demo@mail.com"
-            id="email"
-            autocomplete="off"
-            required
-          />
-        </div>
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="contact_inner">
+                  <div class="row">
+                      <div class="col-md-10">
+                          <div class="contact_form_inner">
+                              <div class="contact_field">
+                                  <h3 class="top-heading">Contact Us</h3>
+                                  <p>Any Inquiry for me Feel free contact.</p>
+                                  <input type="text" class="form-control form-group" placeholder="Name" />
+                                  <input type="text" class="form-control form-group" placeholder="Email" />
+                                  <textarea class="form-control form-group" placeholder="Message" ></textarea>
+                                  <button class="contact_form_submit" (click)="sendMessage()">Send</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="right_conatct_social_icon d-flex align-items-end">
+                             <div class="socil_item_inner d-flex">
+                                <li><a href="https://www.linkedin.com/in/rina-kevalani-762060218/"  target="_blank"><i class="fa fa-linkedin-square" style="color:rgba(22, 43, 235, 0.623)"></i></a></li>
+                                <li><a  href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" style="color:rgb(17, 169, 240)"></i></a></li>
+                                <li><a  href="https://www.instagram.com/kevlani_15/" target="_blank"><i class="fa fa-instagram" style="color:rgb(236, 54, 69)"></i></a></li>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="contact_info_sec">
+                      
+                      <div>
+                          <img src="../../assets/contact.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-
-      <div>
-        <label for="subject"></label>
-        <input
-          type="text"
-          name="subject"
-          placeholder="subject"
-          id="subject"
-          autocomplete="off"
-          required
-        />
-      </div>
-      <div>
-        <label for="textarea"></label>
-        <textarea
-          name="textarea"
-          id="textarea"
-          cols="30"
-          rows="10"
-          autocomplete="off"
-          placeholder="Write your message"
-          required
-        ></textarea>
-      </div>
-
-      <div>
-        <input
-          type="submit"
-          name="submit"
-          id="submit"
-          class="btn"
-          value="send message"
-          (click)="sendMessage()"
-        />
-      </div>
-    </form>
   </div>
 </section>
 
